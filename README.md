@@ -13,7 +13,7 @@ For Admin IT
 * Why to use it ?
 Clean the Operating Sytem with the unused user profile.
 * When to use it ?
-    - Every time making some rome on the computer is needed.
+    - whenever it is necessary to make room on the computer.
     - Remove a corrupted account
 * How to use it ?
-Through command-line Need to open a PowerShell prompt
+Through command-line ; Need to open a PowerShell prompt
