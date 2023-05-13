@@ -6,7 +6,7 @@
 ## About The Project - Specific
 Remove Windows user profile.
 
-What is it ?
+* What is it ?
 PowerShell script
 * Who is it for ?
 For Admin IT
