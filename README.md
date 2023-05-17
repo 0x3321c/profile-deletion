@@ -41,16 +41,6 @@ Locally, open a PowerShell prompt with eleveted permissions
     - [ ] Function
     - [ ] Module
     
-- [ ] Linux
-    - [ ] Script
-    - [ ] Function
-    - [ ] Module
-    
-- [ ] MacOS
-    - [ ] Script
-    - [ ] Function
-    - [ ] Module
-    
 </details>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
