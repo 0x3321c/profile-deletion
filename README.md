@@ -39,7 +39,6 @@ Locally, open a PowerShell prompt with eleveted permissions
 - [ ] Windows
     - [x] Script
     - [ ] Function
-    - [ ] Module
     
 </details>
 
