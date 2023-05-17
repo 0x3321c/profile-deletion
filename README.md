@@ -8,7 +8,6 @@ Remove-UserProfile - Delete user profile on computer
 
 <!-- ABOUT THE PROJECT -->
 ## DESCRIPTION
-Remove Windows user profile.
 
 * What is it ?
     - Script to be run once in a while.
@@ -70,7 +69,7 @@ Distributed under the MIT license. See `LICENSE.txt` for more information.
 ## SEE ALSO
 * [Remove-LocalUser](https://learn.microsoft.com/en-gb/powershell/module/microsoft.powershell.localaccounts/remove-localuser)
 * [Delprof2 – User Profile Deletion Tool](https://helgeklein.com/free-tools/delprof2-user-profile-deletion-tool)
-* [User Profile Deletion Utility (Delprof.exe)](https://www.microsoft.com/en-us/download/details.aspx?id=5405)![image](https://github.com/egiberne/Remove-UserProfile/assets/29532199/416ddd22-aeb5-46f5-be72-f752c7f9d4e2)
+* [User Profile Deletion Utility (Delprof.exe)](https://www.microsoft.com/en-us/download/details.aspx?id=5405) 
 
 
 <!-- ACKNOWLEDGMENTS -->
