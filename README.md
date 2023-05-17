@@ -1,17 +1,27 @@
 <!-- Back to top link -->
 <a name="readme-top"></a>
 <!--
+<!-- ABOUT THE PROJECT -->
+# NAME
+Remove-UserProfile
+<!-- ABOUT THE PROJECT -->
+## SYNOPSIS
+
+Delete user profile on computer
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## DESCRIPTION
 Remove Windows user profile.
 
 * What is it ?
-    PowerShell script
+    - Script to be run once in a while.
+    - Fonction to ne added in you code
+    - Module to be install as a native cmdlet
 * Who is it for ?
-    For IT Support
+    - For IT Support
+    - Power User
 * Why to use it ?
-Clean the Operating Sytem with the unused user profile.
+    - Clean the Operating Sytem with the unused user profile.
 * When to use it ?
     - whenever it is necessary to make room on the computer.
     - Remove a corrupted account
@@ -30,10 +40,21 @@ Open a PowerShell prompt
 <details>
 <summary> Features </summary>
 
-- [ ] feature-100
-- [ ] feature-101
-- [ ] feature-111
-
+- [ ] Windows
+    - [x] Script
+    - [ ] Function
+    - [ ] Module
+    
+- [ ] Linux
+    - [ ] Script
+    - [ ] Function
+    - [ ] Module
+    
+- [ ] MacOS
+    - [ ] Script
+    - [ ] Function
+    - [ ] Module
+    
 </details>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
