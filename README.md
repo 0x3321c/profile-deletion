@@ -45,11 +45,18 @@ Locally, open a PowerShell prompt with eleveted permissions
 ## ROADMAP
 
 <details>
-<summary> Features </summary>
+<summary> Operating System </summary>
 
 - [ ] Windows
     - [x] Script
     - [ ] Function
+ 
+ <summary> Features </summary>
+
+- [ ] Linux
+    - [ ] Script
+    - [ ] Function   
+    
     
 </details>
 
