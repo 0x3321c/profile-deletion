@@ -38,7 +38,7 @@ Remove-UserProfile - Delete user profile on computer
     ```ps1 
     Get-ComputerInfo
     ```
-OR
+
     ```ps1 
     [Environment]::OSVersion
     ```
