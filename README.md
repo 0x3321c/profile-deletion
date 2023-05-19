@@ -34,9 +34,10 @@ Remove-UserProfile - Delete user profile on computer
 ## QUICKSTART
 
 ### Prerequisites
-* Windows 10 
-[Environment]::OSVersion
-* Windows 11
+* Windows 10|11
+    ```ps1 
+    [Environment]::OSVersion
+    ```ps1
 * Powershell version 5.1
     ```ps1
     Get-Host
