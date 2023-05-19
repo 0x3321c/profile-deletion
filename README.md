@@ -16,12 +16,19 @@ Remove-UserProfile - Delete user profile on computer
 * Who is it for ?
     - IT Support
     - Power User
+    - Bets Tester
 * Why to use it ?
     - Clean the Operating Sytem with the unused user profile.
-* When to use it ?
-    - whenever it is necessary to make room on the computer.
+    - Clean up on 32-bit & 64-bit
+    - Delete account not supported by native Windows tools
+   
+   <details>
+ 
+* <summary> When to use it ?  </summary>
+    - Whenever it is necessary to make room on the computer.
     - Remove a corrupted account
-    
+    - For testing purpose
+    </details>
  <p align="right">(<a href="#readme-top">back to top</a>)</p>
  
 <!-- Getting Started -->
