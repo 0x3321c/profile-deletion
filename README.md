@@ -4,7 +4,7 @@
 
 <!-- NAME -->
 # NAME
-Remove-UserProfile - Delete user profile on computer
+**Remove-UserProfile** - _Delete user profile on computer_
 
 <!-- ABOUT THE PROJECT -->
 ## DESCRIPTION
