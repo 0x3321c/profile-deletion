@@ -32,7 +32,23 @@ Remove-UserProfile - Delete user profile on computer
  
 <!-- Getting Started -->
 ## QUICKSTART
-Locally, open a PowerShell prompt with eleveted permissions
+
+### Prerequisites
+* Windows 10 
+[Environment]::OSVersion
+* Windows 11
+* Powershell version 5.1
+    ```ps1
+    Get-Host
+    ```
+
+### Installation
+
+1. Open a PowerShell prompt with eleveted permissions
+2. Set the PowerShell execution policies for Windows computers to Unrestricted
+3. Download the archive of the project
+4. Extract the content of the archive
+
 
  <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
