@@ -1,4 +1,4 @@
-function Remove-WindowsProfile {
+
     [CmdletBinding(SupportsShouldProcess=$true)]
     param (
         [Parameter(Mandatory=$true, Position=0)]
@@ -41,4 +41,4 @@ function Remove-WindowsProfile {
     else {
         Write-Output "Profile for $Username was not found."
     }
-}
+
