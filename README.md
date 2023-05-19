@@ -46,7 +46,9 @@
     ```ps1
     Get-Host
     ```
-
+    ```ps1
+    $PSVersionTable
+    ```
 ### Installation
 
 1. Open a PowerShell prompt with eleveted permissions
