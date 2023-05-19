@@ -1,5 +1,4 @@
-
-    [CmdletBinding(SupportsShouldProcess=$true)]
+[CmdletBinding(SupportsShouldProcess=$true)]
     param (
         [Parameter(Mandatory=$true, Position=0)]
         [string]$Username
@@ -15,25 +14,45 @@
         $UserPath = Join-Path -Path "C:\Users" -ChildPath $Username
         
         if ($PSCmdlet.ShouldProcess($UserPath, "Delete")) {
-            Remove-Item -Path $UserPath -Recurse -Force
+            try {
+                Remove-Item -Path $UserPath -Recurse -Force -ErrorAction Stop
+            }
+            catch {
+                Write-Warning "Failed to delete user profile: $_"
+            }
         }
         
         $RegPathProfileList = Join-Path -Path $RegKeyProfileList -ChildPath $SID
         
         if ($PSCmdlet.ShouldProcess($RegPathProfileList, "Delete")) {
-            Remove-Item -Path $RegPathProfileList -Recurse -Force
+            try {
+                Remove-Item -Path $RegPathProfileList -Recurse -Force -ErrorAction Stop
+            }
+            catch {
+                Write-Warning "Failed to delete registry key $RegPathProfileList: $_"
+            }
         }
         
         $RegPathInstaller = Join-Path -Path $RegKeyInstaller -ChildPath $SID
         
         if ($PSCmdlet.ShouldProcess($RegPathInstaller, "Delete")) {
-            Remove-Item -Path $RegPathInstaller -Recurse -Force
+            try {
+                Remove-Item -Path $RegPathInstaller -Recurse -Force -ErrorAction Stop
+            }
+            catch {
+                Write-Warning "Failed to delete registry key $RegPathInstaller: $_"
+            }
         }
         
         $RegPathAppxAllUserStore = Join-Path -Path $RegKeyAppxAllUserStore -ChildPath $SID
         
         if ($PSCmdlet.ShouldProcess($RegPathAppxAllUserStore, "Delete")) {
-            Remove-Item -Path $RegPathAppxAllUserStore -Recurse -Force
+            try {
+                Remove-Item -Path $RegPathAppxAllUserStore -Recurse -Force -ErrorAction Stop
+            }
+            catch {
+                Write-Warning "Failed to delete registry key $RegPathAppxAllUserStore: $_"
+            }
         }
         
         Write-Output "Profile for $Username has been deleted."
@@ -41,4 +60,3 @@
     else {
         Write-Output "Profile for $Username was not found."
     }
-
