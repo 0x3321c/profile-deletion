@@ -10,8 +10,8 @@ Remove-UserProfile - Delete user profile on computer
 ## DESCRIPTION
 * What is it ?
     - Script to be run once in a while.
-    - Fonction to ne added in you code
-    - Module to be install as a native cmdlet
+    - Fonction to be added in your code
+    - User Interface to be user friendly
     
 * Who is it for ?
     - IT Support
@@ -42,6 +42,7 @@ Locally, open a PowerShell prompt with eleveted permissions
 - [ ] Windows
     - [x] Script
     - [ ] Function
+    - [ ] Interface
 
 - [ ] Linux
     - [ ] Script
@@ -58,14 +59,13 @@ Distributed under the MIT license. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- ACKNOWLEDGMENTS -->
 ## SEE ALSO
 * [Remove-LocalUser](https://learn.microsoft.com/en-gb/powershell/module/microsoft.powershell.localaccounts/remove-localuser)
 * [Delprof2 – User Profile Deletion Tool](https://helgeklein.com/free-tools/delprof2-user-profile-deletion-tool)
 * [User Profile Deletion Utility (Delprof.exe)](https://www.microsoft.com/en-us/download/details.aspx?id=5405) 
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGMENTS -->
 ## ACKNOWLEDGMENTS
