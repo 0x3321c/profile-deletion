@@ -8,7 +8,13 @@
     $RegKeyInstaller = "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\UserData"
     $RegKeyAppxAllUserStore = "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore"
     
-    $SID = (Get-WmiObject -Class Win32_UserProfile | Where-Object { $_.LocalPath.split('\')[-1] -eq $Username }).SID
+    try {
+        $SID = (Get-WmiObject -Class Win32_UserProfile -ErrorAction Stop | Where-Object { $_.LocalPath.split('\')[-1] -eq $Username }).SID
+    }
+    catch {
+        Write-Warning "Failed to retrieve SID for user profile: $_"
+        return
+    }
     
     if ($SID) {
         $UserPath = Join-Path -Path "C:\Users" -ChildPath $Username
