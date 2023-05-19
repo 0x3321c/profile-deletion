@@ -12,8 +12,8 @@
         $SID = (Get-WmiObject -Class Win32_UserProfile -ErrorAction Stop | Where-Object { $_.LocalPath.split('\')[-1] -eq $Username }).SID
     }
     catch {
-        Write-Warning "Failed to retrieve SID for user profile: $_"
-        return
+        Write-Warning "Failed to retrieve SID for user profile, $UserPath"
+      
     }
     
     if ($SID) {
@@ -24,7 +24,7 @@
                 Remove-Item -Path $UserPath -Recurse -Force -ErrorAction Stop
             }
             catch {
-                Write-Warning "Failed to delete user profile: $_"
+                Write-Warning "Failed to delete user profile, $UserPath"
             }
         }
         
@@ -35,7 +35,7 @@
                 Remove-Item -Path $RegPathProfileList -Recurse -Force -ErrorAction Stop
             }
             catch {
-                Write-Warning "Failed to delete registry key $RegPathProfileList: $_"
+                Write-Warning "Failed to delete registry key, $RegPathProfileList"
             }
         }
         
@@ -46,7 +46,7 @@
                 Remove-Item -Path $RegPathInstaller -Recurse -Force -ErrorAction Stop
             }
             catch {
-                Write-Warning "Failed to delete registry key $RegPathInstaller: $_"
+                Write-Warning "Failed to delete registry key, $RegPathInstaller"
             }
         }
         
@@ -57,7 +57,7 @@
                 Remove-Item -Path $RegPathAppxAllUserStore -Recurse -Force -ErrorAction Stop
             }
             catch {
-                Write-Warning "Failed to delete registry key $RegPathAppxAllUserStore: $_"
+                Write-Warning "Failed to delete registry key, $RegPathAppxAllUserStore"
             }
         }
         
