@@ -23,11 +23,12 @@ Remove-UserProfile - Delete user profile on computer
     - Delete account not supported by native Windows tools
    
    <details>
- 
-* <summary> When to use it ?  </summary>
+    
+* <summary> When to use it ?   </summary>
     - Whenever it is necessary to make room on the computer.
     - Remove a corrupted account
     - For testing purpose
+    
     </details>
  <p align="right">(<a href="#readme-top">back to top</a>)</p>
  
