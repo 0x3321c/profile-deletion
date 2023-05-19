@@ -1,4 +1,5 @@
-[CmdletBinding(SupportsShouldProcess=$true)]
+function Remove-WindowsProfile {
+    [CmdletBinding(SupportsShouldProcess=$true)]
     param (
         [Parameter(Mandatory=$true, Position=0)]
         [string]$Username
@@ -6,6 +7,7 @@
     
     $RegKeyProfileList = "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList"
     $RegKeyInstaller = "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\UserData"
+    $RegKeyAppxAllUserStore = "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore"
     
     $SID = (Get-WmiObject -Class Win32_UserProfile | Where-Object { $_.LocalPath.split('\')[-1] -eq $Username }).SID
     
@@ -28,8 +30,15 @@
             Remove-Item -Path $RegPathInstaller -Recurse -Force
         }
         
+        $RegPathAppxAllUserStore = Join-Path -Path $RegKeyAppxAllUserStore -ChildPath $SID
+        
+        if ($PSCmdlet.ShouldProcess($RegPathAppxAllUserStore, "Delete")) {
+            Remove-Item -Path $RegPathAppxAllUserStore -Recurse -Force
+        }
+        
         Write-Output "Profile for $Username has been deleted."
     }
     else {
         Write-Output "Profile for $Username was not found."
     }
+}
