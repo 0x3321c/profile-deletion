@@ -8,23 +8,22 @@ Remove-UserProfile - Delete user profile on computer
 
 <!-- ABOUT THE PROJECT -->
 ## DESCRIPTION
-
-* What is it ?
+<details>
+    
+<summary> What is it ? </summary>
     - Script to be run once in a while.
     - Fonction to ne added in you code
     - Module to be install as a native cmdlet
-* Who is it for ?
+<summary> Who is it for ? </summary>
     - IT Support
     - Power User
     - Bets Tester
-* Why to use it ?
+<summary> Why to use it ? </summary>
     - Clean the Operating Sytem with the unused user profile.
     - Clean up on 32-bit & 64-bit
     - Delete account not supported by native Windows tools
    
-   <details>
- *  When to use it ? 
-    <summary>  Scenarios </summary>
+<summary>  When to use it ?  </summary>
     - Whenever it is necessary to make room on the computer.
     - Remove a corrupted account
     - For testing purpose
