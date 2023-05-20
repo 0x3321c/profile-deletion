@@ -1,13 +1,19 @@
 <!-- Back to top link -->
 <a name="readme-top"></a>
-
+<!--
 
 <!-- NAME -->
 # NAME
-**Remove-UserProfile** - _Delete user profile on computer_
+**Remove-UserProfile** 
+
+<!-- ABSTRACT -->
+## DESCRIPTION
+Delete Microsoft Windows user profile
 
 <!-- ABOUT THE PROJECT -->
 ## DESCRIPTION
+Delete Microsoft Windows user profile
+
 * What is it ?
     - Script to be run once in a while.
     - Fonction to be added in your code
@@ -34,19 +40,23 @@
 ## QUICKSTART
 
 ### Prerequisites
-* Windows 10|11
-    ```ps1 
+Get information about
+* Windows version ; Version must be 10 or alter
+    * _Cmdlet_
+    ```powershell
     Get-ComputerInfo
     ```
-
-    ```ps1 
+    * _Environment Class_
+    ```powershell
     [Environment]::OSVersion
     ```
-* Powershell version 5.1
-    ```ps1
+* Powershell version ; Version must be 5.1 or later
+    * _Cmdlet_
+    ```powershell
     Get-Host
     ```
-    ```ps1
+    * _Automatic Variable_
+    ```powershll
     $PSVersionTable
     ```
 ### Installation
@@ -62,6 +72,8 @@
 <!-- ROADMAP -->
 ## ROADMAP
 
+| Windows | Linux | 
+|:-: | :-:  |
 - [ ] Windows
     - [x] Script
     - [ ] Function
