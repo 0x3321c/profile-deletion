@@ -71,16 +71,14 @@ Get information about
 <!-- ROADMAP -->
 ## ROADMAP
 
-| Windows | Linux | 
-|:-: | :-:  |
+| Windows | Linux | MacOS|
+| :----: | :---: | :--: |
+| In progress | To be decided | To be decided |
+
 - [ ] Windows
     - [x] Script
     - [ ] Function
     - [ ] Interface
-
-- [ ] Linux
-    - [ ] Script
-    - [ ] Function   
    
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
