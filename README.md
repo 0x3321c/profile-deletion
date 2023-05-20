@@ -7,7 +7,7 @@
 **Remove-UserProfile** 
 
 <!-- ABSTRACT -->
-## DESCRIPTION
+## ABSTRACT 
 Delete Microsoft Windows user profile
 
 <!-- ABOUT THE PROJECT -->
