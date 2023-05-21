@@ -1,8 +1,4 @@
-[CmdletBinding(SupportsShouldProcess=$true)]
-    param (
-        [Parameter(Mandatory=$true, Position=0)]
-        [string]$Username
-    )
+$Username = Read-Host "Enter the local username (without the domain):"
     
     $RegKeyProfileList = "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList"
     $RegKeyInstaller = "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\UserData"
