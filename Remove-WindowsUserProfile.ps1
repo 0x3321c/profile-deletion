@@ -15,7 +15,7 @@ $Username = Read-Host "Enter the local username (without the domain):"
     if ($SID) {
         $UserPath = Join-Path -Path "C:\Users" -ChildPath $Username
         
-        if ($PSCmdlet.ShouldProcess($UserPath, "Delete")) {
+        if (Test-Path($UserPath, "Delete")) {
             try {
                 Remove-Item -Path $UserPath -Recurse -Force -ErrorAction Stop
             }
@@ -26,7 +26,7 @@ $Username = Read-Host "Enter the local username (without the domain):"
         
         $RegPathProfileList = Join-Path -Path $RegKeyProfileList -ChildPath $SID
         
-        if ($PSCmdlet.ShouldProcess($RegPathProfileList, "Delete")) {
+        if (Test-Path($RegPathProfileList, "Delete")) {
             try {
                 Remove-Item -Path $RegPathProfileList -Recurse -Force -ErrorAction Stop
             }
@@ -37,7 +37,7 @@ $Username = Read-Host "Enter the local username (without the domain):"
         
         $RegPathInstaller = Join-Path -Path $RegKeyInstaller -ChildPath $SID
         
-        if ($PSCmdlet.ShouldProcess($RegPathInstaller, "Delete")) {
+        if (Test-Path($RegPathInstaller, "Delete")) {
             try {
                 Remove-Item -Path $RegPathInstaller -Recurse -Force -ErrorAction Stop
             }
@@ -48,7 +48,7 @@ $Username = Read-Host "Enter the local username (without the domain):"
         
         $RegPathAppxAllUserStore = Join-Path -Path $RegKeyAppxAllUserStore -ChildPath $SID
         
-        if ($PSCmdlet.ShouldProcess($RegPathAppxAllUserStore, "Delete")) {
+        if (Test-Path($RegPathAppxAllUserStore, "Delete")) {
             try {
                 Remove-Item -Path $RegPathAppxAllUserStore -Recurse -Force -ErrorAction Stop
             }
