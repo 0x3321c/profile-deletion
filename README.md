@@ -2,8 +2,7 @@
 <a name="readme-top"></a>
 
 <!-- NAME -->
-# NAME
-**Remove-UserProfile** 
+# Remove User Profile 
 
 <!-- ABSTRACT -->
 ## ABSTRACT 
