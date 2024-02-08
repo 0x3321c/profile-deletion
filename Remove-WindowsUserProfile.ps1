@@ -16,7 +16,21 @@ Specifies the local username (without the domain) whose profile needs to be dele
 User with administrative privileges
 #>
 
+
+function Write-Log {
+    [CmdletBinding()]
+    param(
+        [Parameter(Mandatory = $true)]
+        [string]$Message
+    )
+
+    $LogPath = Join-Path -Path $env:TEMP -ChildPath "Remove-Windows-User-Profile.log"
+    Add-content -Path $LogPath -Value "$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') - $Message"
+}
+
 $Username = Read-Host "Enter the local username (without the domain):"
+
+Write-Log -Message "Starting profile deletion process for user: $Username"
 
 # Define registry keys
 $RegKeyProfileList = "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList"
@@ -29,6 +43,7 @@ try {
 }
 catch {
     Write-Warning "Failed to retrieve SID for user profile, $UserPath"
+    Write-Log -Message "Failed to retrieve SID for user profile, $Username"
 }
 
 if ($SID) {
@@ -38,9 +53,11 @@ if ($SID) {
     if (Test-Path($UserPath, "Delete")) {
         try {
             Remove-Item -Path $UserPath -Recurse -Force -ErrorAction Stop
+            Write-Log -Message "User profile directory deleted: $UserPath"
         }
         catch {
             Write-Warning "Failed to delete user profile, $UserPath"
+            Write-Log -Message "Failed to delete user profile directory: $UserPath"
         }
     }
 
@@ -54,15 +71,20 @@ if ($SID) {
         if (Test-Path($RegPath, "Delete")) {
             try {
                 Remove-Item -Path $RegPath -Recurse -Force -ErrorAction Stop
+                Write-Log -Message "Registry key deleted: $RegPath"
             }
             catch {
                 Write-Warning "Failed to delete registry key, $RegPath"
+                Write-Log -Message "Failed to delete registry key: $RegPath"
             }
         }
     }
 
     Write-Output "Profile for $Username has been deleted."
+    Write-Log -Message "Profile for $Username has been deleted."
 }
 else {
     Write-Output "Profile for $Username was not found."
+    Write-Log -Message "Profile for $Username was not found."
 }
+```
