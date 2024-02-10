@@ -2,11 +2,11 @@
 <a name="readme-top"></a>
 
 <!-- NAME -->
-# Remove Windows User Profile 
+# REMOCE WINDOWS USER PROFILE 
 
 <!-- ABSTRACT -->
 ## ABSTRACT 
-Delete Microsoft Windows user profile with a cmdlet
+The Cmdlet. Remove-WindowsUserProfile.ps1 deletes Microsoft Windows user profile.
 
 <!-- ABOUT THE PROJECT -->
 ## DESCRIPTION
@@ -86,7 +86,7 @@ Get information about
 <!-- LICENSE -->
 ## LICENSE
 
-Distributed under the MIT license. See `LICENSE.txt` for more information.
+Distributed under the Unlicense. See `LICENSE` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
