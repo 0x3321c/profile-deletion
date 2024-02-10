@@ -2,7 +2,7 @@
 <a name="readme-top"></a>
 
 <!-- NAME -->
-# REMOCE WINDOWS USER PROFILE 
+# REMOVE WINDOWS USER PROFILE 
 
 <!-- ABSTRACT -->
 ## ABSTRACT 
