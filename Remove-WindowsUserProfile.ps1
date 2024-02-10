@@ -1,9 +1,10 @@
 <#
 .SYNOPSIS
-Delete a user profile
+Delete a windows user profile
 
 .DESCRIPTION
-This PowerShell script deletes a user profile from a local machine by specifying the username. It removes both the user profile directory and associated registry keys.
+The cmdlet, Remove-WindowsUserProfile deletes a user profile from a local machine by specifying the username. 
+It removes both the user profile directory and associated registry keys.
 
 .PARAMETER Username
 Specifies the local username (without the domain) whose profile needs to be deleted.
@@ -14,6 +15,12 @@ Specifies the local username (without the domain) whose profile needs to be dele
 
 .ROLE
 User with administrative privileges
+
+.LINK
+Remove-LocalUser https://learn.microsoft.com/en-gb/powershell/module/microsoft.powershell.localaccounts/remove-localuser
+
+.LINK
+Delprof2  https://helgeklein.com/free-tools/delprof2-user-profile-deletion-tool 
 #>
 
 function Remove-WindowsUserProfile {
