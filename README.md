@@ -2,16 +2,15 @@
 <a name="readme-top"></a>
 
 <!-- NAME -->
-# NAME
-**Remove-UserProfile** 
+# Remove Windows User Profile 
 
 <!-- ABSTRACT -->
 ## ABSTRACT 
-Delete Microsoft Windows user profile
+Delete Microsoft Windows user profile with a cmdlet
 
 <!-- ABOUT THE PROJECT -->
 ## DESCRIPTION
-Delete Microsoft Windows user profile
+This PowerShell cmdlet deletes a user profile from a local machine by specifying the username. It removes both the user profile directory and associated registry keys.
 
 * What is it ?
     - Script to be run once in a while.
@@ -76,8 +75,8 @@ Get information about
 | In progress | To be decided | To be decided |
 
 - [ ] Windows
-    - [x] Script
-    - [ ] Function
+    - [ ] Script
+    - [x] Cmdlet
     - [ ] Interface
    
 
