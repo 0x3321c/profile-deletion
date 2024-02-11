@@ -100,7 +100,6 @@ function Remove-WindowsUserProfile {
     }
 }
 
-Export-ModuleMember -Function Remove-WindowsUserProfile
 
 function Write-Log {
     [CmdletBinding()]
@@ -113,7 +112,7 @@ function Write-Log {
     Add-content -Path $LogPath -Value "$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') - $Message"
 }
 
-$Username = Read-Host "Enter the local username (without the domain):" 
+#$Username = Read-Host "Enter the local username (without the domain):" 
 
 Write-Log -Message "Starting profile deletion process for user: $Username"
 
