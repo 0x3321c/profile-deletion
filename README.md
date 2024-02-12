@@ -48,7 +48,7 @@ Get information about
     ```powershell
     [Environment]::OSVersion
     ```
-* Powershell version ; Version must be 5.1 or later
+* Powershell version ; Version must be 6 or later
     * _Cmdlet_
     ```powershell
     Get-Host
@@ -57,6 +57,13 @@ Get information about
     ```powershll
     $PSVersionTable
     ```
+### Update Powershell
+1. Open a PowerShell prompt with eleveted permissions
+2. Run the command line
+    * _winget install --id Microsoft.Powershell --source winget
+    ```powershell
+  
+    
 ### Installation
 
 1. Open a PowerShell prompt with eleveted permissions
