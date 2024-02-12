@@ -60,7 +60,7 @@ Get information about
 ### Update Powershell
 1. Open a prompt, Powershell or Ms-Dos with eleveted permissions
 2. Run the command line
-    * _PowerShell
+    * _PowerShell_
     ```powershell
     winget install --id Microsoft.Powershell --source winget
     ```
