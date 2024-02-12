@@ -58,10 +58,12 @@ Get information about
     $PSVersionTable
     ```
 ### Update Powershell
-1. Open a PowerShell prompt with eleveted permissions
+1. Open a prompt, Powershell or Ms-Dos with eleveted permissions
 2. Run the command line
-    * _winget install --id Microsoft.Powershell --source winget
+    * _PowerShell
     ```powershell
+    winget install --id Microsoft.Powershell --source winget
+    ```
   
     
 ### Installation
