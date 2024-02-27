@@ -2,8 +2,8 @@
 <a name="readme-top"></a>
 
 <!-- NAME -->
-# REMOVE USER PROFILE 
-
+# Remove User Profile 
+**Remove-UserProfile.ps1** 
 <!-- ABSTRACT -->
 ## ABSTRACT 
 The Cmdlet. Remove-WindowsUserProfile.ps1 deletes Microsoft Windows user profile.
